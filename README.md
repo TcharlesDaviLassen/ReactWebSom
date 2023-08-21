@@ -8,4 +8,3 @@ Projeto feito com React JS com servidor Vite.
 npm ci install
 
 npm run dev
-# ReactWebSom
