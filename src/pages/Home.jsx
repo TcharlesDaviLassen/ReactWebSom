@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 
 import '../App.css'
 import ItemList from '../component/ItemList';
+import jsonData from '../jsonData';
 
 function Home() {
 
+    let count = 0;
 
     return (
         <div>
@@ -14,9 +16,20 @@ function Home() {
             </h1>
 
             <h3>Itens do JSON</h3>
+
+            <div style={{ display: 'none' }}>
+                {jsonData.map((item, index) => (
+                    count = index + 1
+                ))}
+            </div>
+
+
+            <h4>Quantidade de registro na página: <span style={{color: "purple"}}>{" " + count}</span></h4>
+
             <ItemList />
-            <Link to="/about">
-                <button>About</button>
+
+            <Link to="/app/about" >
+                <button style={{ marginTop: '112px' }}>About</button>
             </Link>
         </div>
     );

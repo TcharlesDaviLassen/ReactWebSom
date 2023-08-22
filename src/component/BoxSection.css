@@ -9,6 +9,22 @@
 .box {
     border: 1px solid #ccc;
     padding: 10px;
-    width: calc(16.666% - 10px);
+    width: calc(30% - 10px);
     /* Distribui seis caixas por linha */
+
+}
+
+.box {
+    box-shadow: 8px 8px  rgb(141, 141, 141);
+    transition: ease-in .2s;
+}
+
+
+.box:hover {
+    box-shadow: none;
+    background-color: black;
+
+    transition: ease-in-out .2s;
+    /* filter: drop-shadow(0 0 1em #646cffaa); */
+    /* filter: drop-shadow(0 0 .4em #bdc0fcaa); */
 }

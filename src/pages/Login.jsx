@@ -4,29 +4,31 @@ import { FaRegUser } from "react-icons/fa6";
 import '../index.css'
 import PasswordInput from '../contexts/PasswordInput';
 
-const Login = () => {
+const Login = ({ setIsAuthenticated }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    // const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [error, setError] = useState('');
 
     const quantidadeVal = 6;
 
+
     // console.log("Nav ", props)
 
     const handleLogin = async () => {
+
         // Simulate authentication
-        if (username === 'user' && password === 'password') {
+        if (username === 'user' && password === 'pass') {
             setIsAuthenticated(true);
 
-            window.location.href = '/home';
+            window.location.href = '/app/home';
         } else {
 
             if (username === "" || password === "") {
                 setError('Nome e senha devem ser preenchidos');
             } else if (username.length <= 3 || password <= quantidadeVal) {
                 setError(`Nome ou senha deve conter ao menos ${quantidadeVal} caractere`)
-            } 
+            }
             // else if (password != `^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$`) {
             //     setError(`Senha deve conter carcteres especiais`)
             // }
