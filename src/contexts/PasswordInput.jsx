@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { memo, useState } from 'react';
 import { FaEye, FaEyeSlash, FaLock } from "react-icons/fa6";
 
 // import '../index.css'
@@ -20,20 +20,25 @@ function PasswordInput({ value, onChange }) {
                 value={value}
                 onChange={onChange}
                 placeholder="Digite sua senha"
+                autoComplete="current-password"
             />
-            <FaLock className='login_password'/>
+            <FaLock className='login_password' />
             <button
-                className={`password-toggle-button`}
+                className={"password-toggle-button"}
                 onClick={handleTogglePassword}
-            >{showPassword
-                ?
-                // <FaEyeSlash style={{ color: '#ff5733' }} />
-                <FaEyeSlash />
-                :
-                <FaEye />}
+            >
+                {
+                    showPassword
+                        ?
+                        // <FaEyeSlash style={{ color: '#ff5733' }} />
+                        <FaEyeSlash />
+                        :
+                        <FaEye />
+                }
             </button>
         </div>
     );
 }
 
 export default PasswordInput;
+

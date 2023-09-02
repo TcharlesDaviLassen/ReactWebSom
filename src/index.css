@@ -3,16 +3,23 @@
   line-height: 1.5;
   font-weight: 400;
 
+  background-color: #ecf9df;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   /* color: rgba(255, 255, 255, 0.87); */
-  background-color: #242424;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.imageFlower {
+  /* display: flex; */
+  border-radius: 30px;
+  width: 30%;
 }
 
 a {
@@ -90,7 +97,7 @@ input:hover {
   margin-top: 5px;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -103,4 +110,4 @@ input:hover {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
