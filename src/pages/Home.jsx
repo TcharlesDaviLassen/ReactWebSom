@@ -28,7 +28,7 @@ function Home() {
 
             <ItemList />
 
-            <Link to="/app/about" >
+            <Link to="/about" >
                 <button style={{ marginTop: '112px' }}>About</button>
             </Link>
         </div>
