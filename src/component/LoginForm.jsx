@@ -75,31 +75,10 @@ const LoginForm = ({ username, password, onLogin, error, handleNameUserChange, h
                             onChange={handleNameUserChange}
                             autoComplete="username"
                         />
+                        
                         <div style={{ display: 'flex', position: 'absolute', marginTop: '14px', paddingLeft: '6px' }}>
                             <FaRegUser className='login_username' />
                         </div>
-
-                        {/* <div className="password-input-container">
-                        <input className="login_passwordInput"
-                            type={showPassword ? 'text' : 'password'}
-                            // onClick={handleTogglePassword}
-                            value={password}
-                            onChange={handlePasswordChange}
-                            placeholder="Digite sua senha"
-                        />
-                        <FaLock className='login_password' />
-                        <button
-                            className={`password-toggle-button`}
-                            onClick={handleTogglePassword}
-                        >{showPassword
-                            ?
-                            // <FaEyeSlash style={{ color: '#ff5733' }} />
-                            <FaEyeSlash />
-                            :
-                            <FaEye />}
-                        </button>
-                    </div> */}
-
 
                         <PasswordInput value={password} onChange={handlePasswordChange} />
 

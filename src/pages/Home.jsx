@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../App.css'
 import ItemList from '../component/ItemList';
 import jsonData from '../jsonData';
 
@@ -11,26 +10,24 @@ function Home() {
 
     return (
         <div>
-            <h1>
-                HOME
-            </h1>
+            <h1> Serviços  </h1>
 
-            <h3>Itens do JSON</h3>
+            {/* <h3>Itens do JSON</h3> */}
 
-            <div style={{ display: 'none' }}>
+            {/* <div style={{ display: 'none' }}>
                 {jsonData.map((item, index) => (
                     count = index + 1
                 ))}
-            </div>
+            </div> */}
 
-
-            <h4>Quantidade de registro na página: <span style={{color: "purple"}}>{" " + count}</span></h4>
+            {/* <h4>Quantidade de registro na página: <span style={{ color: "purple" }}>{" " + count}</span></h4> */}
 
             <ItemList />
 
             <Link to="/about" >
                 <button style={{ marginTop: '112px' }}>About</button>
             </Link>
+
         </div>
     );
 }

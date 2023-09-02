@@ -1,15 +1,8 @@
 import React, { memo, useState } from 'react';
-// import { FaRegUser } from "react-icons/fa6";
-
 import { useNavigate } from 'react-router-dom';
-// import LoginForm from '../component/LoginForm';
 
 import '../index.css'
 import imageLotus from '../assets/animations/lotusFlower.jpg';
-
-// import Routers from '../routers/router';
-// import PasswordInput from '../contexts/PasswordInput';
-// import { FaRegUser } from 'react-icons/fa6';
 import LoginForm from '../component/LoginForm';
 
 const Login = () => {
@@ -93,7 +86,7 @@ const Login = () => {
 
     return (
         <>
-            <div><img className="imageFlower" src={imageLotus} alt="Minha Imagem"/></div>
+            <div><img className="imageFlower" src={imageLotus} alt="Minha Imagem" /></div>
 
             <LoginForm
                 username={username}
