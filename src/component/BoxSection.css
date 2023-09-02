@@ -4,6 +4,8 @@
     gap: 20px;
     margin-top: 20px;
     width: 60rem;
+    margin-left: -100%;
+    margin-right: auto;
 }
 
 .box {
@@ -22,7 +24,7 @@
 
 .box:hover {
     box-shadow: none;
-    background-color: black;
+    background-color: #646cffaa;
 
     transition: ease-in-out .2s;
     /* filter: drop-shadow(0 0 1em #646cffaa); */

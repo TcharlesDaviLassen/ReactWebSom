@@ -5,6 +5,17 @@
 
   background-color: #ecf9df;
 
+  /* Cores defauld */
+  --whiteB: #fff;
+  --whiteP: #E2E6E2;
+
+  --cor-flowerLot: #ecf9df;
+  --cor-flowerLotBut: #cca44a;
+
+  --cor-primaria: #007bff;
+  --cor-secundaria: #28a745;
+  --cor-destaque: #ff5733;
+
   /* color-scheme: light dark; */
   /* color: rgba(255, 255, 255, 0.87); */
   /* background-color: #242424; */
@@ -17,10 +28,13 @@
 }
 
 .imageFlower {
-  /* display: flex; */
   border-radius: 30px;
-  width: 30%;
+  width: 60%;
 }
+
+/* .div_horario {
+  display: flex;
+} */
 
 a {
   font-weight: 500;
@@ -53,6 +67,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  /* background-color: var(--cor-flowerLotBut); */
   cursor: pointer;
   transition: border-color 0.25s;
   height: 40px;
@@ -109,5 +124,23 @@ input:hover {
 
   button {
     background-color: #f9f9f9;
+  }
+} */
+
+/* @media (prefers-color-scheme: light) { */
+
+/* Estilos para esquema de cores claro */
+/* body {
+    background-color: white;
+    color: black;
+  }
+} */
+
+/* @media (prefers-color-scheme: dark) { */
+
+/* Estilos para esquema de cores escuro */
+/* body {
+    background-color: black;
+    color: white;
   }
 } */
